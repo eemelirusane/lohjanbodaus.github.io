@@ -1,15 +1,22 @@
 body {
-    background-color: rgb(88, 88, 88);
-    
+    background-color: #302c2c;
 }
 
-.etusivu, .kuntosali, .jäsenyys, .yhteystiedot,h1, h2, h3 {
+.etusivu {
+    background-image: url(../img/sali.png);
+    background-repeat: no-repeat;
+}
+
+.etusivu, .kuntosali, .jäsenyys, .yhteystiedot, h2, h3 {
     color: white;
     font-size: larger;
     text-align: center;
 
 }
 
+p {
+    font-size: larger;
+}
 
 .sidebar{
 	position: fixed;
@@ -21,10 +28,11 @@ body {
 }
 
 .sidebar h2{
-	color: maroon;
+	color: red;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 30px;
+    font-size: larger;
 }
 
 .sidebar ul li{
@@ -34,21 +42,25 @@ body {
 }
 
 .sidebar ul li a{
-	color: maroon;
+	color: red;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-size: larger;
 }
+
+
 
 .sidebar a:hover, a:focus {
 	color: white;
     text-decoration: none;
-    background-color: red;
+    background-color: maroon;
+    font-size: larger;
 
 }
 img {
-    opacity: 0.1;
+    opacity: 0.5;
     display: block;
     max-width: 100%;
     height: auto;
@@ -56,5 +68,9 @@ img {
     margin-right: auto;
 
   }
+
+a:active{
+    color: red;
+}
 
 
