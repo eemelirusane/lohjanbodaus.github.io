@@ -4,14 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lohjan bodaus</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
 <body>
-    
+    <a id="etusivu"></a>
+    <div class="main-container d-inline">
+        <div class="sidebar" id="side_nav">
+            <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-between">
+                <h1 class="fs-4"><span class="bg-transparent text-white rounded shadow px-2 me-2">Lohjan Bodaus </span> 
+                <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i
+                        class="fal fa-stream"></i></button>
+            </div>
 
+            <ul class="list-unstyled px-2">
+                <li class=""><a href="#etusivu" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
+                    <span><i class=""></i>Etusivu</span>
+                </a>
+            </li>
+                <li class="active"><a href="#kuntosali" class="text-decoration-none px-3 py-2 d-block"><i
+                            class=""></i> Kuntosali</a></li>
+                <li class=""><a href="#jäsenyys" class="text-decoration-none px-3 py-2 d-block d-flex justify-content-between">
+                        <span><i class=""></i> Jäsenyys</span>
+
+                    </a>
+                </li>
+                <li class=""><a href="#yhteystiedot" class="text-decoration-none px-3 py-2 d-block"><i
+                            class=""></i> yhteystiedot</a></li>
+            </ul>
+            <hr class="h-color mx-2">
+
+        </div>
+         <div class="d-flex justify-content-between d-md-none d-block">
+            <button class="btn px-1 py-0 open-btn me-2 bg-light"><i class="fal fa-stream"></i></button>
+
+              
+           </div>
+           
+           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"></div>
+                 
+                
+
+            </nav>
+    </div>
+    </div>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+   <!-- <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">Lohjan Bodaus</a>
         <button type="button" 
         class="navbar-toggler"
@@ -38,9 +77,9 @@
                     <a class="nav-link" href="#yhteystiedot">Yhteystiedot</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-     
+        </div>-->
+   <!-- </nav> -->
+
 	<!--<div class="sidebar">
 		<h2>sisältö</h2>
 		<nav>
@@ -62,7 +101,6 @@
         </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <!--Etusivun teksti-->
-        <a id="etusivu"></a>
         <h2 class="teksti">Bodaus ry:n ylläpitämä,
             vanhan koulukunnan kuntosali on pitkän historian omaava.
             <br>
@@ -90,14 +128,46 @@
         <p>Jäsenistömme koostuu kaikenikäisistä, molempien sukupuolien edustajista ja vanha olettamus pelkästään miesten salista on historiaa.</p>
         
          </p>
+        </div>
+        
+        <div class="slideshow-container">
 
-  
-        </div>
-        <div class="slider-wrapper theme-default">
-            <div class="nivoSlider"><img alt="salikuva" src="img/R (1).jpg" title=""><img alt="Salikuva" src="img/R (2).jpg"
-                title=""><img alt="Salikuva" src="img/salikuva.jpg">
-        </div>
-        </div>
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="img/salikuva.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="img/R (1).jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="img/R (2).jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/bgimg.jpg" style="width:100%">
+              </div>
+              
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            
+        
 <br>
 <br>
 
@@ -189,7 +259,24 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1440.9990063600321!2d24.092150550047872!3d60.24913728701462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468dbf8135a3aaf5%3A0x2e2b8b64577d1fac!2sLohjan%20Bodaus%20ry!5e0!3m2!1sen!2sfi!4v1715585559208!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <script src="js/javascript.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>$(".sidebar ul li").on('click', function () {
+    $(".sidebar ul li.active").removeClass('active');
+    $(this).addClass('active');
+});
+
+$('.open-btn').on('click', function () {
+    $('.sidebar').addClass('active');
+
+});
+
+
+$('.close-btn').on('click', function () {
+    $('.sidebar').removeClass('active');
+
+})
+console.log("Moi Kaverit!!!")</script>
 </body>
 </html>
