@@ -1,8 +1,19 @@
 body {
     background-color: #302c2c;
 }
+
+.logo {
+margin-top: ;
+}
+
+  @media (max-width: 600px) {
+    .hide-on-small-screens {
+      display: none;
+    }
+  }
+
 #side_nav{
-    background: #000;
+    background: rgba(0, 0, 0, 0.438);
     min-width: 250px;
     max-width: 250px;
     transition: all 0.3s;
@@ -28,6 +39,7 @@ body {
    }
 
    
+   
    @media(max-width: 767px){
     #side_nav{
       margin-left: -250px;
@@ -40,31 +52,45 @@ body {
       margin-left: 0;
      }
    }
-.etusivu {
-    background-image: url(../img/image\ \(1\)\ \(2\).png);
+
+   .etusivu {
+    background-image: url(../img/file.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     margin-left: auto;
     width: auto;
     height: auto;
-    background-size: -200%;
+
 }
 
 
 
-.etusivu, .kuntosali, .jäsenyys, .yhteystiedot, h2, h3 {
+.etusivu, .kuntosali, .jäsenyys, .yhteystiedot, h2 {
     color: white;
     font-size: larger;
     text-align: center;
-  
-    
-    
-    
 }
+
+h3{
+  font-size: 200%;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
 p.tietoa1 {
-    padding: 10px 50px; /* Adjust the padding */
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border: 5px solid #ffffff;
+    border-radius: 100px;
+    padding: 20px;
+    display: inline-block;
   }
+.tietoa2 {
+  border: 5px solid #ffffff;
+  padding: 20px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
 p {
     font-size: larger;
 }
@@ -105,19 +131,14 @@ ul, ol{
 
 /*Kuva Slideshow*/
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow boxin laajuus */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Seuraava ja edellinen buttonit */
+.mySlides {display: none}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -125,35 +146,30 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: rgb(255, 0, 0);
+  color: white;
   font-weight: bold;
-  font-size: 40px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  font-size: 20px;
   user-select: none;
 }
 
-/* Seuraava buttoni oikealle */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
-/* Kun hiiri ala ohjauspisteessä: musta tausta */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Numerot (1/4 etc) */
-.numbertext {
-  color: #ff0000;
-  font-size: 12px;
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-/* Ohjauspisteet alla */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -169,16 +185,13 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* Kuvan vaihdon animaatio (Fading) */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+  animation: fade 1.5s ease infinite;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  0%, 100% {opacity: 0.4}
+  20%, 80% {opacity: 1}
 }
-
 
 /* Kuva SlideShow päättyy */

@@ -17,8 +17,7 @@ console.log("Moi Kaverit!!!")
 
 //Kuva Slideshown js
 
-//Vaihtaa kuinka kauan yksi kuva on näkyvillä
-const SLIDE_DURATION = 5000; // 5 sekunttia
+//Vaihtaa kuinka kauan yksi kuva on näkyvilläconst SLIDE_DURATION = 5000; // 5 sekunttia
 const SLIDE_INTERVAL = 5000; // 5 sekunttia
 
 let slideIndex = 1;
