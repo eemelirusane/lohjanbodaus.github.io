@@ -2,9 +2,6 @@ body {
     background-color: #302c2c;
 }
 
-.logo {
-margin-top: ;
-}
 
   @media (max-width: 600px) {
     .hide-on-small-screens {
@@ -60,6 +57,7 @@ margin-top: ;
     margin-left: auto;
     width: auto;
     height: auto;
+
 
 }
 
