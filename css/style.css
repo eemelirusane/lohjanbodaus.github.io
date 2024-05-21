@@ -2,15 +2,14 @@ body {
     background-color: #302c2c;
 }
 
-
   @media (max-width: 600px) {
     .hide-on-small-screens {
       display: none;
     }
   }
-
+  
 #side_nav{
-    background: rgba(0, 0, 0, 0.438);
+    background: rgb(0, 0, 0);
     min-width: 250px;
     max-width: 250px;
     transition: all 0.3s;
@@ -35,7 +34,28 @@ body {
     color: #fff;
    }
 
-   
+
+   @media (max-width: 767.98px) {
+    .etusivu .logo img {
+      width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+
+    .kuntosali h1,
+    .kuntosali h2 {
+      text-align: center;
+    }
+
+    .kuntosali p {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .tietoa1 {
+      text-align: center;
+    }
+  }
    
    @media(max-width: 767px){
     #side_nav{
@@ -49,7 +69,7 @@ body {
       margin-left: 0;
      }
    }
-
+/*
    .etusivu {
     background-image: url(../img/file.png);
     background-repeat: no-repeat;
@@ -59,9 +79,17 @@ body {
     height: auto;
 
 
+}*/
+
+/*etusivun tausta*/
+
+body{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: auto;
+  width: auto;
+  height: auto;
 }
-
-
 
 .etusivu, .kuntosali, .jäsenyys, .yhteystiedot, h2 {
     color: white;
@@ -127,69 +155,42 @@ ul, ol{
     list-style-type: none;
 }
 
-/*Kuva Slideshow*/
+/*Slideshow + */
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+.carousel {
+  margin: 0 auto;
 }
 
-.mySlides {display: none}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.carousel-inner {
   text-align: center;
+  padding: 20px;
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.carousel-control-prev {
+  margin-left: 15%;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.carousel-control-next {
+  margin-right: 15%;
 }
 
-.fade {
-  animation: fade 1.5s ease infinite;
+
+.carousel-item {
+  transition: opacity 0.1s ease;
 }
 
-@keyframes fade {
-  0%, 100% {opacity: 0.4}
-  20%, 80% {opacity: 1}
+.carousel-inner {
+  transition: none;
 }
 
-/* Kuva SlideShow päättyy */
+.carousel-item.active,
+.carousel-item-next.active,
+.carousel-item-prev.active {
+  opacity: 1;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  opacity: 0;
+}
+/*Slideshow / */
