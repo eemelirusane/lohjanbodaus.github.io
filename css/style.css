@@ -1,10 +1,22 @@
 body {
     background-color: #302c2c;
-}
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  
+  }
+
 
   @media (max-width: 600px) {
     .hide-on-small-screens {
-      display: none;
+      width: 100%;
+      height: auto;
+      z-index: 1;
     }
   }
   
@@ -35,13 +47,15 @@ body {
    }
 
 
+
+   
    @media (max-width: 767.98px) {
     .etusivu .logo img {
       width: 100%;
       height: auto;
       z-index: 1;
     }
-
+  
     .kuntosali h1,
     .kuntosali h2 {
       text-align: center;
@@ -83,13 +97,6 @@ body {
 
 /*etusivun tausta*/
 
-body{
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-left: auto;
-  width: auto;
-  height: auto;
-}
 
 .etusivu, .kuntosali, .jäsenyys, .yhteystiedot, h2 {
     color: white;
@@ -120,12 +127,6 @@ p.tietoa1 {
 p {
     font-size: larger;
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
  
   .header-main{
 	width:10%;
@@ -150,10 +151,13 @@ body {
 .etusivu .teksti{
     background-color: rgba(211, 211, 211, 0.788);
     color:black;
+    padding: 20px;
 }
 ul, ol{
     list-style-type: none;
 }
+
+
 
 /*Slideshow + */
 
@@ -192,5 +196,16 @@ ul, ol{
 .carousel-item-next,
 .carousel-item-prev {
   opacity: 0;
+}
+@media (max-width: 767.98px) {
+  br {
+      display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #mobile .img {
+    display: none;
+  }
 }
 /*Slideshow / */

@@ -14,4 +14,3 @@ $('.close-btn').on('click', function () {
 
 })
 console.log("Moi Kaverit!!!")
-
